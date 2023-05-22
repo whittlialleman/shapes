@@ -1,4 +1,78 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+
+.card-one {
+    background-image: url("img/evergreens_tall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-style: solid; */
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo-one {
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #fff;
+}
+
+.job-title {
+    font-size: x-large;
+}
+
+.card-two {
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo-two {
+    clip-path: circle();
+    box-shadow: 0 0 0 5px #fff;
+}
+
+.card-three {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo-three {
+    border-radius: 50%;
+}
+
+.card-four {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo-four {
+    clip-path: circle();
+}
+
+.card-five {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }

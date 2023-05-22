@@ -1,78 +1,179 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    max-width: 2000px;
+    justify-content: center;
 }
 
 .card-one {
-    background-image: url("img/evergreens_tall.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* border-style: solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     border-color: lightgray;
     text-align: center;
-    padding-top: 200px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    min-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+    padding-top: 140px;
+    padding-left: 30px;
+}
+
+.card-one-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(8px);
+    background-image: url("img/evergreens_tall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .photo-one {
     border-radius: 50%;
-    box-shadow: 0 0 0 5px #fff;
+    box-shadow: 0 0 0 5px #fff, 0 0 10px 15px rgba(0, 0, 0, 0.2);
+    width: 200px; 
+    height: 200px;
 }
 
 .job-title {
     font-size: x-large;
+    margin-top: 0;
 }
 
 .card-two {
+    background-image: url("img/coder_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     border-color: lightgray;
-    padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding-top: 150px;
+    padding-left: 30px;
+    min-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 450px;
+    margin: 30px;
 }
 
-.photo-two {
-    clip-path: circle();
+.photo-two { /* Rectangular images have different settings to adjust where they are in the circle */
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
     box-shadow: 0 0 0 5px #fff;
+    border-radius: 50%;
 }
 
 .card-three {
+    position: relative;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     border-color: lightgray;
     text-align: center;
-    padding: 15px;
+    padding-top: 180px;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+}
+
+.card-three-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 37%, 0 63%);
+    border-radius: 10px;
 }
 
 .photo-three {
     border-radius: 50%;
+    box-shadow: 0 0 0 5px #fff, 0 0 10px 15px rgba(0, 0, 0, 0.2);
+    width: 200px; 
+    height: 200px;
 }
 
 .card-four {
+    background-image: url("img/riomaggiore.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     border-color: lightgray;
-    text-align: center;
-    padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 180px 20px 0px 20px;
+    min-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 450px;
+    margin: 30px;
+    text-align: center;
 }
 
 .photo-four {
-    clip-path: circle();
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 0 5px white;
+    border-radius: 50%;
 }
 
 .card-five {
+    position: relative;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     border-color: lightgray;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    min-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+    padding-top: 400px;
+}
+
+.card-five-bg {
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    height: 400px;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    background-color: rgb(237, 88, 33);
+    border: none;
+    margin-top: 10px;
+    padding: 8px 10px;
+    color: white;
+}
+
+.google-icon {
+    padding: 0 15px 13px;
 }
